@@ -5,7 +5,8 @@
     "dev": "nodemon api/express/server.js",
     "micro-dev": "micro-dev api/supermario-fortress/characters.lambda.js",
     "deploy": "/bin/bash deploy.sh",
-    "test": "ava --verbose --watch"
+    "test": "ava --verbose --watch",
+    "update-gitignore": "/bin/bash update-gitignore.sh"
   },
   "name": "zeitnowmicro",
   "version": "1.0.0",
