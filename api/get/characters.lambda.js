@@ -6,11 +6,11 @@ const query = require("micro-query")
 dotenv.config()
 const PORT = process.env.PORT || null
 
-const DB_HOST = process.env.DB_HOST //"ds123844.mlab.com"
-const DB_PORT = process.env.DB_PORT //"23844"
-const DB_NAME = process.env.DB_NAME //"supermario-fortress"
-const DB_USER = process.env.DB_USER //"supermario-fortress"
-const DB_PASSWORD = process.env.DB_PASSWORD //"123supermario-fortress"
+const DB_HOST = process.env.DB_HOST
+const DB_PORT = process.env.DB_PORT
+const DB_NAME = process.env.DB_NAME
+const DB_USER = process.env.DB_USER
+const DB_PASSWORD = process.env.DB_PASSWORD
 
 mongoose.connect(`mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`, { useNewUrlParser: true })
 
