@@ -30,9 +30,9 @@ module.exports = async (req, res) => {
     characters.findOne({ "name": name }, (error, character) => {
         if (error) micro.sendError(req, res, error)
 
-        const result = { name: character.name || "character.name", superpowers: "fireball" }
+        //const result = { name: character.name || "character.name", superpowers: "fireball" }
 
-        micro.send(res, 200, result)
+        micro.send(res, 200, { character })
     })
 }
 
