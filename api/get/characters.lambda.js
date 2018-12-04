@@ -29,10 +29,17 @@ module.exports = async (req, res) => {
 
     characters.findOne({ "name": name }, (error, character) => {
         if (error) micro.sendError(req, res, error)
-
+        // console.log(character)
+        // {
+        //     "_id": "5c054977627966094cd725fe",
+        //     "name": "mario",
+        //     "color": "red",
+        //     "skill": "jumpNrun"
+        // }
         //const result = { name: character.name || "character.name", superpowers: "fireball" }
 
-        micro.send(res, 200, { character })
+        const alternatedChar = { ...character, superpowers: "fly" }
+        micro.send(res, 200, alternatedChar)
     })
 }
 
