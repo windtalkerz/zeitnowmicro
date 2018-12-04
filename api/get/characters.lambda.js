@@ -38,7 +38,7 @@ module.exports = async (req, res) => {
         // }
         //const result = { name: character.name || "character.name", superpowers: "fireball" }
 
-        const alternatedChar = { ...character, superpowers: "fly" }
+        const alternatedChar = { ...character._doc, superpowers: "fly" }
         micro.send(res, 200, alternatedChar)
     })
 }
