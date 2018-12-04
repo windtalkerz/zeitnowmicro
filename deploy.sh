@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# ###################
+# -> zeit:now
+# ###################
 # cd ~/Desktop/zeitnowmicro
 # now && now alias
 

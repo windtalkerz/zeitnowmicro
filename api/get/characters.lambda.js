@@ -29,7 +29,7 @@ module.exports = async (req, res) => {
 
     characters.findOne({ "name": name }, (error, character) => {
         if (error) micro.sendError(req, res, error)
-        micro.send(res, 200, { character })
+        micro.send(res, 200, { ...character, superpowers: "fireball" })
     })
 }
 
