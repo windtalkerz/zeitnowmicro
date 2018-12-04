@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "alias": "micro.supermario.io",
+    "builds": [
+        {
+            "src": "**/*.lambda.js",
+            "use": "@now/node"
+        },
+        {
+            "src": "**/*server.js",
+            "use": "@now/node-server"
+        }
+    ],
+    "env": {
+        "NODE_ENV": "development",
+        "DB_HOST": "ds123844.mlab.com",
+        "DB_PORT": "23844",
+        "DB_NAME": "supermario-fortress",
+        "DB_USER": "supermario-fortress",
+        "DB_PASSWORD": "123supermario-fortress"
+    }
+}

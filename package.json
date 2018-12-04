@@ -1,0 +1,27 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/express/server.js",
+    "dev": "nodemon api/express/server.js",
+    "micro-dev": "micro-dev api/supermario-fortress/characters.lambda.js",
+    "deploy": "/bin/bash deploy.sh",
+    "test": "ava --verbose --watch"
+  },
+  "name": "zeitnowmicro",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "micro": "^9.3.3",
+    "micro-ex-router": "^1.5.4",
+    "micro-query": "^0.3.0",
+    "mongoose": "^5.3.14",
+    "url-parse": "^1.4.4"
+  },
+  "devDependencies": {
+    "ava-http": "^1.0.0",
+    "micro-dev": "^3.0.0"
+  }
+}
